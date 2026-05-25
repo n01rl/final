@@ -1,4 +1,4 @@
-/* --- global stuff --- */
+/* base reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,20 +15,14 @@ body {
 
 .robotoserif { font-family: "Roboto Serif", serif; }
 
-.container {
+.container, .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* --- header / navigation --- */
+/* main nav area */
 header {
     background-color: transparent;
     padding: 20px 0;
@@ -59,10 +53,9 @@ nav ul li a:hover { color: #000; }
     font-size: 15px;
     transition: 0.3s;
 }
-
 .touch:hover { background-color: #444; }
 
-/* --- hero section images (fixed) --- */
+/* hero section and image pile */
 .hero-section { margin: 40px 0 100px 0; }
 
 .background {
@@ -106,7 +99,7 @@ nav ul li a:hover { color: #000; }
 .img-middle { z-index: 2; top: -30px; left: -30px; opacity: 0.5; }
 .img-front { z-index: 3; top: 0; left: 0; box-shadow: -10px 10px 30px rgba(0,0,0,0.5); }
 
-/* --- stats area --- */
+/* company stats list */
 .info { padding: 40px 0 80px 0; }
 .stats-container { display: flex; align-items: flex-start; }
 .txtbox { text-align: center; flex: 1; padding: 0 15px; }
@@ -114,7 +107,7 @@ nav ul li a:hover { color: #000; }
 .txtbox h2 { font-size: 22px; font-weight: 600; margin-bottom: 15px; }
 .txtbox p { font-size: 15px; color: #555; }
 
-/* --- mission section --- */
+/* mission section - dark themed */
 .mission-section { background-color: #0d0d0d; padding: 100px 0; color: #ffffff; }
 .mission-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
 .mission-eyebrow { color: #45b8b0; font-size: 16px; margin-bottom: 15px; }
@@ -143,7 +136,7 @@ nav ul li a:hover { color: #000; }
 .stat-group p { color: #a0a0a0; font-size: 11px; }
 .stat-divider { height: 50px; width: 1px; background: rgba(255,255,255,0.2); }
 
-/* --- team section --- */
+/* team member grid */
 .team-section { padding: 80px 20px; font-family: 'Inter', sans-serif; background: #fff; }
 .team-container { max-width: 1100px; margin: 0 auto; }
 .team-heading { font-family: 'Playfair Display', serif; font-size: 3rem; text-align: center; margin-bottom: 50px; }
@@ -158,7 +151,6 @@ nav ul li a:hover { color: #000; }
 .team-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
 .team-role { font-size: 0.8rem; color: #666; }
 
-/* banner with darkened background overlay */
 .team-cta-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/aboutusimg/enoughtalk.jpg');
     background-size: cover; background-position: center; border-radius: 16px; padding: 70px 20px; text-align: center; color: #fff;
@@ -167,7 +159,7 @@ nav ul li a:hover { color: #000; }
 .team-btn { background: #fff; color: #333; text-decoration: none; padding: 12px 30px; border-radius: 30px; font-weight: 600; transition: 0.3s; }
 .team-btn:hover { background: #f0f0f0; }
 
-/* --- footer --- */
+/* footer area styles */
 .site-footer { background: #0d0d0d; color: #fff; padding: 80px 0 50px; margin-top: 60px; }
 .footer-top { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1.6fr; gap: 40px; }
 .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
@@ -187,23 +179,42 @@ nav ul li a:hover { color: #000; }
 .footer-social { display: flex; gap: 12px; }
 .footer-social a { background: #fff; color: #111; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; }
 
-/* --- responsiveness starts here --- */
+/* tablet and phone responsive */
 @media (max-width: 992px) {
-    .background { flex-direction: column; text-align: center; }
+    .background { flex-direction: column; text-align: center; padding: 50px 30px; }
     .hero-left { max-width: 100%; margin-bottom: 80px; }
-    .hero-right { transform: translateY(0); }
-    .mission-grid { grid-template-columns: 1fr; }
+    .hero-right { transform: translateY(0); margin-top: 40px; }
+
+    .mission-grid { grid-template-columns: 1fr; gap: 60px; }
+    .stats-container { flex-direction: column; gap: 50px; align-items: center; }
+    .team-grid { flex-direction: column; gap: 40px; }
+    .mission-lists { flex-direction: column; gap: 10px; }
+
+    .mission-visuals { height: 450px; }
+    .visual-img-top { width: 180px; height: 240px; left: 10px; }
+    .visual-img-bottom { width: 180px; height: 220px; }
+    .floating-team-card { top: 20px; right: 10px; transform: scale(0.85); }
+    .visual-stats { bottom: 20px; gap: 20px; }
+
+    header .container { flex-direction: column; gap: 20px; }
+    nav ul { gap: 20px; flex-wrap: wrap; justify-content: center; }
+
     .footer-top { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
-    header .container { flex-direction: column; gap: 20px; }
-    .hero-left h1.dms { font-size: 38px; }
-    .stats-container { flex-direction: column; gap: 50px; }
-    .mission-title { font-size: 36px; }
-    .mission-lists { flex-direction: column; }
-    .mission-visuals { height: 450px; }
-    .team-grid { flex-direction: column; }
+    /* shrink text further for small phones */
+    .hero-left h1.dms { font-size: 32px; }
+    .mission-title { font-size: 34px; }
+    .team-heading { font-size: 2.2rem; }
+    .team-cta-banner h2 { font-size: 1.8rem; }
+
+    /* images resize for hero stack */
+    .hero-right { width: 260px; height: 360px; }
+    .img-back { left: -30px; top: -30px; }
+    .img-middle { left: -15px; top: -15px; }
+
+    /* footer grid to 1 col */
     .footer-top { grid-template-columns: 1fr; text-align: center; }
     .footer-logo { justify-content: center; }
     .footer-bottom { flex-direction: column; align-items: center; text-align: center; }

@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="stylesindex.css">
     
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="img/logo.png" alt="logo">
+                <i class="fa-solid fa-hurricane"></i>
                 <h1>Canvix</h1>
             </div>                        
             <nav>
@@ -28,11 +28,235 @@
             <a href="#" class="touch">Get in touch</a>
         </div>
     </header>
+
     <main>
-        <section>
-            
+        <!-- hero section with dots and rings -->
+        <section class="hero">
+            <div class="container hero-wrapper">
+                <div class="dot-pattern"></div>
+
+                <div class="hero-left">
+                    <h1 class="robotoserif">Ready to take your <br> <span class="highlight">Business Growth</span> <br> to the next level?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit- et ut massa libero egestas malesuada viverra gravida libero cursus nulla leo pulvinar.</p>
+                    
+                    <a href="#" class="btn-trial">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                        Start your Free Trial
+                    </a>
+
+                    <div class="brands-area">
+                        <h6>Trusted by Leading Brands</h6>
+                        <div class="brand-logos">
+                            <span class="brand"><i class="fa-solid fa-leaf"></i> Greenish</span>
+                            <span class="brand"><i class="fa-solid fa-gear"></i> Automation</span>
+                            <span class="brand"><i class="fa-solid fa-seedling"></i> Leafe</span>
+                            <span class="brand"><i class="fa-solid fa-clover"></i> Mindfulness</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="circle-outer">
+                        <div class="circle-inner">
+                            <div class="main-img-box">
+                                <img src="img/homeimg/office.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- services grid area -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-header">
+                    <p class="services-eyebrow">Our Services</p>
+                    <h2 class="services-main-title robotoserif">High-impact services <br> for your business</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card card-dark">
+                        <div class="icon-box"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3 class="robotoserif">Content Marketing</h3>
+                        <p>Our team creates engaging and shareable content that resonates with your audience, drives organic traffic</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-gem"></i></div>
+                        <h3 class="robotoserif">Graphic Design</h3>
+                        <p>Unlock the power of visual storytelling with our expert graphic design services tailored to elevate your brand and captivate.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+                        <h3 class="robotoserif">Digital Marketing</h3>
+                        <p>Elevate your brand's online presence with our data-driven digital marketing strategies. From SEO and content marketing</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-palette"></i></div>
+                        <h3 class="robotoserif">Web Design</h3>
+                        <p>We specialize in creating visually stunning, user-friendly websites that align with your brand identity and deliver an exceptional.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-user-gear"></i></div>
+                        <h3 class="robotoserif">IT Consulting</h3>
+                        <p>IT consulting, or information technology consulting, refers to the practice of providing advisory and implementation services</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-box"><i class="fa-solid fa-diamond"></i></div>
+                        <h3 class="robotoserif">Brand Identity</h3>
+                        <p>It involves creating a unique and recognizable identity that sets the brand apart from competitors and resonates with the target audience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about/mission with image stack -->
+        <section class="home-mission">
+            <div class="container mission-wrapper">
+                <div class="mission-visuals">
+                    <div class="mission-stack">
+                        <img src="img/homeimg/back.png" class="stack-img img-bg">
+                        <img src="img/homeimg/mid.png" class="stack-img img-md">
+                        <img src="img/homeimg/front.jpg" class="stack-img img-ft">
+                    </div>
+                </div>
+
+                <div class="mission-text">
+                    <h6 class="mission-eyebrow">About us</h6>
+                    <h2 class="mission-title robotoserif">The core mission <br> behind all our work</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit metus ut tortor purus tincidunt sed lectus ut eros, turpis tincidunt id.</p>
+                    
+                    <div class="mission-stats">
+                        <div class="stat-item">
+                            <h3 class="robotoserif">330 +</h3>
+                            <span>Companies helped</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="robotoserif">230 +</h3>
+                            <span>Revenue generated</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-trial">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                        Start your Free Trial
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- process flow steps -->
+        <section class="process-section">
+            <div class="container">
+                <div class="process-header">
+                    <p class="process-eyebrow">Process</p>
+                    <h2 class="process-main-title robotoserif">Process that moves <br> things forward</h2>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-item">
+                        <div class="step-header">
+                            <div class="step-icon"><i class="fa-regular fa-lightbulb"></i></div>
+                            <h3 class="robotoserif">Ideate</h3>
+                        </div>
+                        <div class="step-box"><p>The ideation process is a crucial phase in the design process where creative thinking and brainstorming</p></div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="step-header">
+                            <div class="step-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <h3 class="robotoserif">Reserach</h3>
+                        </div>
+                        <div class="step-box"><p>Research is a critical component of the design process, helping designers understand the problem</p></div>
+                    </div>
+
+                    <div class="process-item">
+                        <div class="step-header">
+                            <div class="step-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <h3 class="robotoserif">Create</h3>
+                        </div>
+                        <div class="step-box"><p>Designing a process involves several key steps to ensure clarity, efficiency, successful implementation</p></div>
+                    </div>
+
+                    <div class="process-item last-step">
+                        <div class="step-header">
+                            <div class="step-icon"><i class="fa-regular fa-circle-check"></i></div>
+                            <h3 class="robotoserif">Testing</h3>
+                        </div>
+                        <div class="step-box"><p>Testing is a crucial phase in the design process to ensure that the product or system meets the specified requirements</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- masonry portfolio showcase -->
+        <section class="showcase-section">
+            <div class="container">
+                <h2 class="showcase-title robotoserif">Recent Showcase</h2>
+                <div class="showcase-top-bar">
+                    <a href="#" class="btn-trial-dark">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                        Start your Free Trial
+                    </a>
+                </div>
+
+                <div class="showcase-grid">
+                    <div class="showcase-col">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img"><img src="img/homeimg/webui.jpg"></div>
+                            <div class="portfolio-info"><h3 class="robotoserif">Web UI design</h3><p>Creative UI design</p></div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-img"><img src="img/homeimg/uidesign.jpg"></div>
+                            <div class="portfolio-info"><h3 class="robotoserif">UI Design</h3><p>Creative Rebranding for logo</p></div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-col col-offset">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img overlay-item">
+                                <img src="img/homeimg/todesign.jpg">
+                                <div class="img-overlay-icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                            </div>
+                            <div class="portfolio-info"><h3 class="robotoserif">To design Digital Strategy</h3><p>Social Media Marketing</p></div>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="portfolio-img"><img src="img/homeimg/uidesign2.jpg"></div>
+                            <div class="portfolio-info"><h3 class="robotoserif">UI Design</h3><p>Creative Rebranding for logo</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- black and white testimonial area -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="testimonial-card">
+                    <img src="img/homeimg/blackguy.png" class="testimonial-avatar">
+                    <h2 class="testimonial-quote robotoserif">
+                        “Be genuine in your assessment, and provide constructive feedback to benefit both potential customers and the company providing the product or service.”
+                    </h2>
+                    <div class="testimonial-author">
+                        <h4 class="robotoserif">Jacqueline Miller</h4>
+                        <p>CEO of an eduport</p>
+                    </div>
+                    <div class="testimonial-nav">
+                        <button class="nav-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="nav-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- site footer -->
     <footer class="site-footer">
         <div class="wrapper">
             <div class="footer-top">
@@ -52,15 +276,12 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Portfolio Single</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col links-col">
                     <h3 class="robotoserif">Utility Pages</h3>
                     <ul>
-                        <li><a href="#">Style Guide</a></li>
-                        <li><a href="#">Instruction</a></li>
                         <li><a href="#">License</a></li>
                         <li><a href="#">Changelog</a></li>
                         <li><a href="#">Error 404</a></li>
@@ -71,7 +292,7 @@
                 <div class="footer-col subscribe-col">
                     <h3 class="robotoserif">Subscribe</h3>
                     <form class="subscribe-form">
-                        <input type="email" placeholder="Enter your email here" required>
+                        <input type="email" placeholder="Enter your email" required>
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
@@ -84,12 +305,10 @@
                     <h4 class="robotoserif">Copyright by</h4>
                     <p>Designed by Iconstica.com</p>
                 </div>
-                
                 <div class="bottom-info">
                     <h4 class="robotoserif">Contact Us</h4>
                     <p>+0 12 457 4578</p>
                 </div>
-                
                 <div class="bottom-info address-info">
                     <h4 class="robotoserif">Address</h4>
                     <p>119 Tanglewood Lane Gulfport, MS 39503</p>
