@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvix | Contact Us</title>
     
+    <!-- favicon -->
     <link rel="icon" type="image/png" href="img/logo.png">
+    
     <link rel="stylesheet" href="stylescontact.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts matched with about page -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <div class="container">
             <div class="logo">
                 <img src="img/logo.png" alt="logo">
-                <h1>Canvix</h1>
+                <h1 class="robotoserif">Canvix</h1>
             </div>                        
             <nav>
                 <ul>
@@ -28,15 +34,91 @@
             <a href="#" class="touch">Get in touch</a>
         </div>
     </header>
+
     <main>
-        <section class="Portfolio">
+        <section class="contact-section">
+            <div class="container contact-grid">
+                
+                <div class="contact-left">
+                    <!-- matched heading font -->
+                    <h1 class="robotoserif">Let’s talk</h1>
+                    <p class="contact-intro">We collaborate with thousands of creators, entrepreneurs and complete legends.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div>
+                                <h4 class="robotoserif">Our email</h4>
+                                <p>hello@example.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4 class="robotoserif">Call us</h4>
+                                <p>+123 456 7892</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4 class="robotoserif">Find us</h4>
+                                <p>Open Google Maps</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-simple">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <div class="form-card">
+                        <form>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label>First name</label>
+                                    <input type="text" placeholder="First name">
+                                </div>
+                                <div class="input-group">
+                                    <label>Last name</label>
+                                    <input type="text" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Email address">
+                                </div>
+                                <div class="input-group">
+                                    <label>Phone</label>
+                                    <input type="tel" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="input-group full-width">
+                                <label>Message</label>
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Submit Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
             <div class="container">
-                <div class="boxport">
-                    <h1>Our Portfolio</h1>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1684333000000!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- matched footer from your about us page -->
     <footer class="site-footer">
         <div class="wrapper">
             <div class="footer-top">
@@ -51,10 +133,10 @@
                 <div class="footer-col links-col">
                     <h3 class="robotoserif">Pages</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Home 2</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Portfolio Single</a></li>
                     </ul>
