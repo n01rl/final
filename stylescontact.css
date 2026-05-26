@@ -96,7 +96,6 @@ nav ul a:hover { color: #000; }
 .links-col a { color: #a0a0a0; text-decoration: none; font-size: 13px; transition: color 0.3s ease; }
 .links-col a:hover { color: #ffffff; }
 
-/* footer subscribe bar */
 .subscribe-form { display: flex; background-color: #ffffff; border-radius: 40px; padding: 5px; align-items: center; }
 .subscribe-form input {
     flex-grow: 1; background: transparent; border: none; outline: none;
@@ -122,7 +121,6 @@ nav ul a:hover { color: #000; }
 
 
 @media (max-width: 992px) {
-    /* switch grid to single column */
     .contact-grid { flex-direction: column; align-items: center; text-align: center; }
     .contact-intro { margin-left: auto; margin-right: auto; }
     .contact-right { width: 100%; }
